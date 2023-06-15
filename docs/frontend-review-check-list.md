@@ -33,3 +33,64 @@ is more informative than
 
 // /files
 ```
+
+## Destructuring
+Whether you’re importing different methods of a package or using props values, try to destructure your es6 code for cleanliness:
+
+```javascript
+import _ from "lodash";
+
+// ....
+
+_.forEach(
+  //...
+)
+_.filter(
+  //...
+)
+```
+
+To
+
+```javascript
+import {forEach, filter} from "lodash";
+
+// ....
+
+forEach(
+  //...
+)
+filter(
+  //...
+)
+```
+Similarly:
+
+```javascript
+const UserInfo = (props) =>
+(<div>
+  <div>
+    First Name: {props.firstName}
+  </div>
+  <div>
+    Second Name: {props.secondName}
+  </div>
+</div>)
+```
+
+To
+
+```javascript
+const UserInfo = ({
+  firstName,
+  lastName
+}) =>
+(<div>
+  <div>
+    First Name: {firstName}
+  </div>
+  <div>
+    Second Name: {secondName}
+  </div>
+</div>)
+```
