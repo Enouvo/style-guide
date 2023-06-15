@@ -262,6 +262,26 @@ function isPercentage(val: number): boolean {
   return isInRange; 
 }
 ```
+
+
+### Use IFFE function to less `else if`
+```javascript
+// BAD
+let label = null;
+if(user){
+  label = user.getFullName()
+} else if (product){
+  label = product.getName()
+}
+
+// GOOD
+const label = (() => {
+  if(user) return user.getFullName()
+  if(product) return user.getName()
+  return null;
+})()
+
+```
 ## Addition of New Package(s)
 React applications, like others, are built on top of so many other useful packages/libraries. In an active development, you still need to add new packages. While code reviewing, pay special attention to the changes in package.json file. Consider the following points:
 
@@ -269,6 +289,7 @@ Is the new package absolutely necessary?
 Is the new package rightly listed under “dependencies” or “devDependencies”?
 The npm profile page for the library shows healthy downloads per week and frequent releases of new versions (a package with no new release for over a year is a red sign).
 The license of the package is compatible with your needs. If the license is ISC or MIT, you’re probably good to go.
+
 
 
 ## TO BE DEFINED AND UPDATED CONSTANTLY
@@ -280,3 +301,4 @@ For more best practices and conventions.
 - [Airbnb React/JSX Style Guide](https://airbnb.io/javascript/react/#basic-rules)
 - [Google JavaScript Style Guide](https://google.github.io/styleguide/jsguide.html)
 - [ReactJS Code Review](https://www.techighness.com/post/react-js-code-review-checklist/)
+- [Frontend Check List](https://frontendchecklist.io/)
