@@ -1,5 +1,5 @@
 # Frontend Review CheckList
-
+Some rules mentioned below can be automatically checked using ESLint and tsconfig. We will attempt to list the rules that cannot be automatically checked. Please refer to [eslint-config-react](https://github.com/Enouvo/eslint-config-react) for more information on additional rules.
 ## Naming convention
 - **Follow S-I-D best practices**
   - **Short**: must not take long to type and remember
