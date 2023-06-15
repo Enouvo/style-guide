@@ -94,3 +94,10 @@ const UserInfo = ({
   </div>
 </div>)
 ```
+
+## References
+
+For more best practices and conventions.
+
+- [Airbnb React/JSX Style Guide](https://airbnb.io/javascript/react/#basic-rules)
+- [Google JavaScript Style Guide](https://google.github.io/styleguide/jsguide.html)
