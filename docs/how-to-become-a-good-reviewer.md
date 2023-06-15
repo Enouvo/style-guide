@@ -1,3 +1,5 @@
+# How to become a good reviewer
+
 Here’s the full list of our tips and what to check to do a better React Code Review:
 
 - Are there any **new *npm packages* added**?
