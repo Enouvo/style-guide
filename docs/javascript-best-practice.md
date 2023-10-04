@@ -1,13 +1,13 @@
 # Javascript Best Practice 
 
-// ❌ Don't 
+❌ Don't 
 ```javascript
 import { cloneDeep } from 'lodash-es';
 
 const cloneData = cloneDeep(data);
 ```
 
-// ✅  Do 
+✅  Do 
 ```javascript
 const cloneData = structuredClone(data);
 ```
