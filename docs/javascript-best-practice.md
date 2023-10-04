@@ -1,19 +1,21 @@
 # Javascript Best Practice 
 
 ** 1. Use structuredClone to deep clone data**
+
 ```javascript
-❌ Don't 
+// ❌ Don't 
 import { cloneDeep } from 'lodash-es';
 
 const cloneData = cloneDeep(data);
 
-✅  Do 
+// ✅  Do 
 const cloneData = structuredClone(data);
 ```
 
 **2. Use finally to remove duplication**
+
 ```javascript
-❌ Don't 
+// ❌ Don't 
 const countNumberOfThings = things => {
   if (things) {
     logEvent()
@@ -27,7 +29,7 @@ const countNumberOfThings = things => {
   return things.length
 }
 
-✅  Do
+// ✅  Do
 const countNumberOfThings = things => {
   try {
     if (things) {
@@ -45,7 +47,7 @@ const countNumberOfThings = things => {
 
 **3. Use extend to remove duplication property on class**
 ```javascript
-❌ Don't
+// ❌ Don't
 class Department {
   get totalAnnualCost() {...}
   get name() {...}
@@ -58,7 +60,7 @@ class Employee {
   get id() {...}
 }
 
-✅  Do
+// ✅  Do
 class Party {
   get name() {...}
   get annualCost() {...}
