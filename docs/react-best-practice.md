@@ -58,3 +58,35 @@ render: (_, record) => {
   return <b className={textClass}>{name}</b>;
 };
 ```
+
+**3. Don't create a nested component**
+```javascript
+// ❌ Don't 
+const Form = () => {
+  const Input = (props) => <input type='text' {...props} />
+  return (
+    <>
+        <Input
+          key={index}
+          value={value}
+          onChange={(e) => onChange(e.target.value, index)}
+        />
+    </>
+  );
+};
+
+// ✅  Do 
+const Input = (props) => <input type='text' {...props} />
+
+const Form = () => {
+  return (
+    <>
+        <Input
+          key={index}
+          value={value}
+          onChange={(e) => onChange(e.target.value, index)}
+        />
+    </>
+  );
+};
+```
