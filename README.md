@@ -8,6 +8,7 @@
 - [Frontend CheckList from DavidDias ](https://github.com/thedaviddias/Front-End-Checklist)
 - [React Code Review Check List ](https://dev.to/ritikbanger/react-frontend-code-review-checklist-master-code-review-4die)
 - [Best practice when use Typescript](https://enouvogroup.notion.site/Best-practice-when-use-Typescript-f5324bbe66bd4390ac6ea857e5d9fe09)
+- [Javascript Best Practice](docs/javascript-best-practice.md)
 
 ## Tools
 - [Eslint config for react](https://github.com/Enouvo/eslint-config-react)
