@@ -26,17 +26,17 @@ function FooComponent(){
 // ❌ Don't 
 render: (_, record) => {
 	return (
-	  <div>
-	    {record.projectStatus.name === 'Published' ? (
-	      <b className="c-yellow">{record.projectStatus.name}</b>
-	    ) : record.projectStatus.name === 'Started' ? (
-	      <b className="c-secondary-blue">{record.projectStatus.name}</b>
-	    ) : record.projectStatus.name === 'Completed' ? (
-	      <b className="c-primary">{record.projectStatus.name}</b>
-	    ) : (
-	      <b className="c-warning">{record.projectStatus.name}</b>
-	    )}
-	  </div>
+		<div>
+			{record.projectStatus.name === 'Published' ? (
+				<b className="c-yellow">{record.projectStatus.name}</b>
+			) : record.projectStatus.name === 'Started' ? (
+				<b className="c-secondary-blue">{record.projectStatus.name}</b>
+			) : record.projectStatus.name === 'Completed' ? (
+				<b className="c-primary">{record.projectStatus.name}</b>
+			) : (
+				<b className="c-warning">{record.projectStatus.name}</b>
+			)}
+		</div>
 	);
 }
 
