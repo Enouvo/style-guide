@@ -12,6 +12,7 @@
 - [React Best Practice](docs/react-best-practice.md)
 - [HTML Best Practice](docs/html-best-practice.md)
 - [Tailwind Best Practice](https://gist.github.com/sandren/0f22e116f01611beab2b1195ab731b63)
+- [CSS Best Practice](docs/css-best-practice.md)
 
 ## Tools
 - [Eslint config for react](https://github.com/Enouvo/eslint-config-react)
