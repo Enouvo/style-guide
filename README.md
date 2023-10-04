@@ -9,6 +9,7 @@
 - [React Code Review Check List ](https://dev.to/ritikbanger/react-frontend-code-review-checklist-master-code-review-4die)
 - [Typescript Best Practice](docs/typescript-best-practice.md)
 - [Javascript Best Practice](docs/javascript-best-practice.md)
+- [React Best Practice](docs/react-best-practice.md)
 
 ## Tools
 - [Eslint config for react](https://github.com/Enouvo/eslint-config-react)
