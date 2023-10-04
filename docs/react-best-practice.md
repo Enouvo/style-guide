@@ -2,7 +2,7 @@
 
 **1. We may not need to put your `state` as a dependency
 ```jsx
-❌ Don't 
+// ❌ Don't 
 function FooComponent(){
   const [count, setCount] = useState(0);
 
@@ -11,7 +11,7 @@ function FooComponent(){
   return <div>Count: {count}</div>
 }
 
-✅  Do 
+// ✅  Do 
 function FooComponent(){
   const [count, setCount] = useState(0);
 
