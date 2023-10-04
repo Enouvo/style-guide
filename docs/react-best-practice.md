@@ -38,6 +38,7 @@ render: (_, record) => {
 	    )}
 	  </div>
 	);
+}
 
 // ✅  Do 
 const STATUS = {
