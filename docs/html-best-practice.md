@@ -1,6 +1,6 @@
 # HTML Best Practice 
 
-**1. Avoid use div to much 
+**1. Avoid use div to much**
 ```html
 // ❌ Don't 
 <div id="content">
