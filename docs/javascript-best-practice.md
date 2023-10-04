@@ -6,7 +6,6 @@
 import { cloneDeep } from 'lodash-es';
 
 const cloneData = cloneDeep(data);
-```
 
 ✅  Do 
 const cloneData = structuredClone(data);
