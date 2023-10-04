@@ -10,6 +10,7 @@
 - [Typescript Best Practice](docs/typescript-best-practice.md)
 - [Javascript Best Practice](docs/javascript-best-practice.md)
 - [React Best Practice](docs/react-best-practice.md)
+- [HTML Best Practice](docs/html-best-practice.md)
 
 ## Tools
 - [Eslint config for react](https://github.com/Enouvo/eslint-config-react)
