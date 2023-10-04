@@ -56,6 +56,16 @@ if(isDisabled) {
  // ...
 }
 ```
+- Avoid negative names for boolean var
+```javascript
+// Bad
+const isInValidApiKey = apiKey === null
+
+// Good
+const isValidApiKey = apiKey !== null
+if(!isValidApiKey) {}
+
+```
 ### Folder Name
   - All folders should be named using **camelCase**
   - All folders of specific categories should be named as plurals
