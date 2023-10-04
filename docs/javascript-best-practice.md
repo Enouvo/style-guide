@@ -96,3 +96,21 @@ function createPublicFile(name) {
   createFile(`./public/${name}`);
 }
 ```
+**5. Use return first **
+// Don't ❌
+let label = null
+
+if(user){
+  label = user.getFullName()
+} else if(product){
+  label = product.getName()
+}
+
+// Do ✅
+const label = (() => {
+  if(user) return user.getFullName()
+  if(product) return product.getName()
+  return null
+})()
+```
+
