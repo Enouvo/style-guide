@@ -1,7 +1,7 @@
 # React Best Practice 
 
 **1. We may not need to put your `state` as a dependency
-```jsx
+```javascript
 // ❌ Don't 
 function FooComponent(){
   const [count, setCount] = useState(0);
