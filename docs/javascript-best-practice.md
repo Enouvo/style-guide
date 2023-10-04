@@ -76,3 +76,23 @@ class Employee extends Party {
   get id() {...}
 }
 ```
+**4. Create a function with single responsibily**
+```javascript
+// Don't ❌
+function createFile(name, isPublic) {
+  if (isPublic) {
+    fs.create(`./public/${name}`);
+  } else {
+    fs.create(name);
+  }
+}
+
+// Do ✅
+function createFile(name) {
+  fs.create(name);
+}
+
+function createPublicFile(name) {
+  createFile(`./public/${name}`);
+}
+```
