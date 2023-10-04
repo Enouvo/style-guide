@@ -154,3 +154,25 @@
   // ...
 }
 ```
+
+**6. Prefer use optional chaining**
+```tsx
+interface Category {
+  title?: string;
+}
+interface Post {
+  categories?: Category[];
+}
+
+const post: Post = { categories: [{ title: 'an' }] };
+
+// ❌  Don't 
+if (post.categories && post.categories?.length > 0) {
+  //
+}
+
+// ✅ Do
+if (post?.categories?.[0]?.title) {
+  //
+}
+```
