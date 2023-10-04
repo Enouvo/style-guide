@@ -1,6 +1,6 @@
 # React Best Practice 
 
-**1. We may not need to put your `state` as a dependency
+**1. We may not need to put your `state` as a dependency**
 ```javascript
 // ❌ Don't 
 function FooComponent(){
