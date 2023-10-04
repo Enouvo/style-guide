@@ -125,3 +125,32 @@
 ```
 
 **5. Flexible use of advanced utility types**
+```tsx
+{
+  interface PersonInfo {
+    age: number;
+    height: number;
+  }
+
+  type PersonName = 'A' | 'B';
+
+  // ✨ Record<Keys, Type>
+  const persons: Record<PersonName, PersonInfo> = {
+    A: { age: 1, height: 2 },
+    B: { age: 1, height: 2 },
+  };
+
+  // ✨ Omit<Type, Keys>
+  const p1: Omit<PersonInfo, 'height'> = {
+    age: 1,
+  };
+
+  // ✨ ReturnType<Type>
+  const p2: ReturnType<() => PersonInfo> = {
+    age: 1,
+    height: 2,
+  };
+
+  // ...
+}
+```
