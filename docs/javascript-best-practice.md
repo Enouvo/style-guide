@@ -1,6 +1,6 @@
 # Javascript Best Practice 
 
-** 1. Use structuredClone to deep clone data**
+**1. Use structuredClone to deep clone data**
 
 ```javascript
 // ❌ Don't 
