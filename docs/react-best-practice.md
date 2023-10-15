@@ -90,3 +90,36 @@ const Form = () => {
   );
 };
 ```
+**4. Using object literals instead of switch case for better readability and maintainability**
+```javascript
+// ❌ Don't 
+switch(props.type){
+	case "ADMIN":
+		return <Admin />
+  case "USER":
+		return <User />
+  default:
+		return <NotFound />
+}
+
+// ✅  Do 
+const componentMap = {
+	ADMIN: Admin,
+	USER: User,
+	NOT_FOUND: NotFound,
+};
+
+const Component = componentMap[props.type];
+return <Component />
+```
+
+// ✅  Do 
+const componentMap = {
+	ADMIN: React.lazy(() => import("../components/),
+	USER: React.lazy(() => import("../components/),
+	NOT_FOUND: React.lazy(() => import("../components/),
+};
+
+const Component = componentMap[props.type];
+return <Component />
+```
