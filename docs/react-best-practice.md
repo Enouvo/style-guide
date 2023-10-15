@@ -111,9 +111,8 @@ const componentMap = {
 
 const Component = componentMap[props.type];
 return <Component />
-```
 
-// ✅  Do 
+// ✅  Better 
 const componentMap = {
 	ADMIN: React.lazy(() => import("../components/),
 	USER: React.lazy(() => import("../components/),
